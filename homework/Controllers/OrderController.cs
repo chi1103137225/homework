@@ -20,5 +20,31 @@ namespace homework.Controllers
             return View();
         }
 
+        public ActionResult Index2(string id)
+        {
+            ViewBag.id = id;
+            return View();
+        }
+        /// <summary>
+        /// 新增訂單畫面
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Insertorder()
+        {
+            return View();
+        }
+
+        /// <summary>
+        /// 新增訂單存檔的Action
+        /// </summary>
+        /// <param name="order"></param>
+        /// <returns></returns>
+        [HttpPost()]
+        public ActionResult InsertOrder(Models.Order order)
+        {
+            Models.orderService orderService = new Models.orderService();
+            orderService.InsertOrder(order);
+            return View("Index");
+        }
     }
 }

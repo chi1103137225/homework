@@ -13,7 +13,7 @@ namespace homework.Models
         /// <summary>
         /// 新增訂單
         /// </summary>
-        public void InsertOrder()
+        public void InsertOrder(Models.Order order)
         {
 
         }
