@@ -13,12 +13,9 @@ namespace homework.Controllers
 
         public ActionResult Index()
         {
-            //Models.orderService orderService = new Models.orderService();
-            //var order = orderService.GetOrderById("111");
-            //ViewBag.CustId = order.CustId;
-            //ViewBag.CustName = order.CustName;
+            Models.orderService orderService = new Models.orderService();
+            ViewBag.Data = orderService.GetOrders();
 
-            
             return View();
         }
 
@@ -33,6 +30,8 @@ namespace homework.Controllers
         /// <returns></returns>
         public ActionResult Insertorder()
         {
+            Models.Order order = new Models.Order();
+            order.CustName = "叡揚資訊";
             return View();
         }
 
