@@ -11,20 +11,25 @@
 </head>
 <body>
     <div>
+        <div>訂單編號</div>
+        <div>@Html.TextBox("txtOrderId")</div>
+        @Html.DropDownList("客戶代號",(List<SelectListItem>)ViewBag.custData)
+    </div>
+    <div>
         <table>
             <tr>
                 <td>客戶代號</td>
                 <td>客戶名稱</td>
                 <td>員工名稱</td>
             </tr>
-                @foreach (var item in (List<homework.Models.Order>)ViewBag.Data)
+                @*@foreach (var item in (List<homework.Models.Order>)ViewBag.Data)
                     {
                         <tr>
                             <td>@item.CustId</td>
                             <td>@item.CustName</td>
                             <td>@item.EmpName</td>
                         </tr>
-                    }
+                    }*@
         </table>
     </div>
 </body>
