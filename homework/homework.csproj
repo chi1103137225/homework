@@ -128,6 +128,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Emp\Controllers\Default1Controller.cs" />
     <Compile Include="Areas\Emp\EmpAreaRegistration.cs" />
+    <Compile Include="Controllers\LayouttestController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -241,6 +242,8 @@
     <Content Include="Views\Order\Index.cshtml" />
     <Content Include="Views\Order\Index2.cshtml" />
     <Content Include="Views\Order\Insertorder.cshtml" />
+    <Content Include="Views\_LayoutPage.cshtml" />
+    <Content Include="Views\Layouttest\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
