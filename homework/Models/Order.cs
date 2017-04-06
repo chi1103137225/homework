@@ -55,12 +55,12 @@ namespace homework.Models
         /// <summary>
         /// 出貨公司名稱
         /// </summary>
-        public int ShipperName { get; set; }
+        public string ShipperName { get; set; }
 
         /// <summary>
         /// 運費
         /// </summary>
-        public double Freight { get; set; }
+        public decimal Freight { get; set; }
 
         /// <summary>
         /// 出貨說明
